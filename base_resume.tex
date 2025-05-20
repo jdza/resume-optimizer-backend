@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in LaTeX
+% Original Author : Sourabh Bajaj
+% Modified for Joseph Dzaluk
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands (unchanged)
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Joseph Dzaluk} & \href{mailto:josephpdzaluk@gmail.com}{josephpdzaluk@gmail.com}\\
+  \href{https://linkedin.com/in/josephdzaluk}{linkedin.com/in/josephdzaluk} & Mobile: \href{tel:+14074142025}{(407) 414-2025} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {B.S. Computer Science; GPA: 3.55}{May 2018 -- May 2023}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {C3.ai}{San Francisco, CA}
+      {Associate Solution Engineer}{Jul 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{React Generative AI}
+          {Built custom React Generative AI applications.}
+        \resumeItem{Project Work}
+          {Contributed to SmithRx and Boston Scientific projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Special Olympics USA Games}{Remote}
+      {Data Scientist}{May 2022 -- Jul 2023}
+      \resumeItemListStart
+        \resumeItem{Data Analysis}
+          {Utilized SQL to retrieve and organize volunteer and donation data stored in MongoDB databases.}
+        \resumeItem{Donor Targeting}
+          {Used Pandas for data manipulation and analysis to improve donor targeting strategies.}
+        \resumeItem{A/B Testing}
+          {Conducted A/B testing to measure the effectiveness of various targeting approaches.}
+        \resumeItem{Tableau Dashboards}
+          {Developed dashboards that led to a 30\% increase in donations over the previous summer.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intercontinental Exchange}{Atlanta, GA}
+      {Data Analyst}{Jun 2021 -- Aug 2021}
+      \resumeItemListStart
+        \resumeItem{MongoDB/JSON}
+          {Researched MongoDB documents and analyzed JSON files to monitor automated jobs.}
+        \resumeItem{Data Cleansing}
+          {Used Alteryx to clean and process job data, creating metrics related to runtime and success rates.}
+        \resumeItem{Predictive Modeling}
+          {Developed predictive models using NumPy, achieving over 85\% accuracy.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Automated Algorithm Design}
+      {Developed evolutionary-inspired machine learning algorithms with scikit-learn and NumPy to optimize stock trading strategies.}
+    \resumeSubItem{Recon Blind Multi-Chess AI}
+      {Built a chess agent using the Minimax algorithm to evaluate game states three layers deep, achieving 3rd place in a class-wide tournament.}
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Rubik's Cube Speedsolving}
+      {2nd and 3rd place at Yale and MIT competitions; ranked 7th at US Nationals, 23rd nationally, and top 100 globally.}
+    \resumeSubItem{AIME Participant}
+      {Top 5\% in AMC12, qualifying for AIME.}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS (OPTIONAL)------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming}{: Python, Java, SQL}
+      \hfill
+      \textbf{Tools}{: Tableau, MongoDB, Alteryx, Pandas, NumPy, Scikit-learn}
+      \hfill
+      \textbf{Expertise}{: Data Analysis, Machine Learning, Statistics, Databases}
+    }
+  \resumeSubHeadingListEnd
+
+\end{document}
